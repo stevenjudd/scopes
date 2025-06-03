@@ -1,0 +1,26 @@
+# Steven's best practices for PowerShell
+
+- Variables
+  - Use Pascal Case for variables defined as parameters
+  - Use Camel Case for variables defined in the code
+- Use single quotes for non-expanding text and double quotes for expanding text
+  - $var1 = 'this is some text'
+  - $var2 = "Profile path: $PROFILE"
+- Keep your line lenth below 120
+  - Use the natural line continuation characters
+  - Use splatting
+  - Use the Join operator
+- Write PowerShell functions
+  - Keep your code focused and atomic
+  - Helps with testing
+  - Can be executed like scripts
+- Use switch statements rather than complex if/elseif/else
+- Learn RegEx
+  - Seriously. Learn it.
+  - Many operators in PowerShell use RegEx
+  - VSCode search and replace can use RegEx
+  - Select-String/grep use RegEx
+- Writing Help
+  - Give good explanations for each parameter
+  - Give an example for how to use each parameter
+  - Put what you think will be the most used example at the bottom of your example list
