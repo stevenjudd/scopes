@@ -49,7 +49,7 @@ function Test-FunctionScope {
   Write-Host "PrivateVar: $privateVar"
 
   Test-SubFunctionScope
-}
+} # end function Test-FunctionScope
 
 # Call the function
 Test-FunctionScope
